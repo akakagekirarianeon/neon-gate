@@ -93,14 +93,16 @@
 
     <!-- URLを動的に流し込むためのマーカーだにゃ！ -->
     <script>
-      const appUrl = "https://miniature-notification-asia-warm.trycloudflare.com"; // APP
-      const statusUrl = "https://archives-pond-arabic-metro.trycloudflare.com"; // STATUS
+      // pythonスクリプトからこの行（のクォート内）を置換するにゃ！
+      const appUrl = "https://meant-treaty-cleveland-gps.trycloudflare.com";
+      const statusUrl = "https://jose-stylish-marked-mpg.trycloudflare.com";
 
-      if (appUrl !== "https://miniature-notification-asia-warm.trycloudflare.com") {
+      // 取得したURLを即座にUIに反映するにゃん！
+      if (appUrl && appUrl !== "APP_TUNNEL_URL") {
         document.getElementById('link-app').href = appUrl;
         document.getElementById('url-app').innerText = appUrl;
       }
-      if (statusUrl !== "https://archives-pond-arabic-metro.trycloudflare.com") {
+      if (statusUrl && statusUrl !== "STATUS_TUNNEL_URL") {
         document.getElementById('link-status').href = statusUrl;
         document.getElementById('url-status').innerText = statusUrl;
       }
